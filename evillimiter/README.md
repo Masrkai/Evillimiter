@@ -1,5 +1,3 @@
-<p align="center"><img src="https://i.imgur.com/CBGh0Yx.png" /></p>
-
 # Evil Limiter
 
 A tool to monitor, analyze and limit the bandwidth (upload/download) of devices on your local network without physical or administrative access.<br>
@@ -65,11 +63,3 @@ Type ```evillimiter``` or ```python3 bin/evillimiter``` to run the tool.
 ## Restrictions
 
 - **Limits IPv4 connctions only**, since [ARP spoofing](https://en.wikipedia.org/wiki/ARP_spoofing) requires the ARP packet that is only present  on IPv4 networks.
-
-## Disclaimer
-[Evil Limiter](https://github.com/bitbrute/evillimiter) is provided by [bitbrute](https://github.com/bitbrute) "as is" and "with all faults". The provider makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this software. There are inherent dangers in the use of any software, and you are solely responsible for determining whether Evil Limiter is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and the provider will not be liable for any damages you may suffer in connection with using, modifying, or distributing this software. 
-
-## License
-
-Copyright (c) 2019 by [bitbrute](https://github.com/bitbrute). Some rights reserved.<br>
-[Evil Limiter](https://github.com/bitbrute/evillimiter) is licensed under the MIT License as stated in the [LICENSE file](LICENSE).
