@@ -25,6 +25,8 @@ Possibly missing python packages will be installed during the installation proce
 ```bash
 git clone https://github.com/bitbrute/evillimiter.git
 cd evillimiter
+sudo apt install python3-setuptools
+sudo apt install python3-netifaces
 sudo python3 setup.py install
 ```
 

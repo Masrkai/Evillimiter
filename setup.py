@@ -38,11 +38,10 @@ def get_description():
 
 
 NAME = 'evillimiter'
-AUTHOR = 'bitbrute'
-AUTHOR_EMAIL = 'bitbrute@gmail.com'
+AUTHOR = 'Masrkai'
 LICENSE = 'MIT'
 VERSION = get_version()
-URL = 'https://github.com/bitbrute/evillimiter'
+URL = 'https://github.com/Masrkai/Evillimiter'
 DESCRIPTION = get_description()
 KEYWORDS = ["evillimiter", "limit", "bandwidth", "network"]
 PACKAGES = find_packages()
@@ -78,7 +77,6 @@ CMDCLASS = { 'clean': CleanCommand }
 setup(
     name=NAME,
     author=AUTHOR,
-    author_email=AUTHOR_EMAIL,
     description=DESCRIPTION,
     license=LICENSE,
     keywords=KEYWORDS,
