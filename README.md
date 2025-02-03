@@ -5,14 +5,14 @@
 [![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](PROJECT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
-[![HitCount](http://hits.dwyl.io/bitbrute/evillimiter.svg)](http://hits.dwyl.io/bitbrute/evillimiter)
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 A tool to monitor, analyze and limit the bandwidth (upload/download) of devices on your local network without physical or administrative access.<br>
 ```evillimiter``` employs [ARP spoofing](https://en.wikipedia.org/wiki/ARP_spoofing) and [traffic shaping](https://en.wikipedia.org/wiki/Traffic_shaping) to throttle the bandwidth of hosts on the network.
 
 **Searching for a Windows-compatible version?**<br>
-Check out the open-source alternative [EvilLimiter for Windows](https://github.com/bitbrute/evillimiter-windows).
+Check out the open-source alternative *"made by the original author [bitbrute](https://github.com/bitbrute/) not me "*
+- [EvilLimiter for Windows](https://github.com/bitbrute/evillimiter-windows).
 
 ## Requirements
 - Linux distribution
@@ -25,12 +25,16 @@ Possibly missing python packages will be installed during the installation proce
 ```bash
 git clone https://github.com/bitbrute/evillimiter.git
 cd evillimiter
-sudo apt install python3-setuptools
-sudo apt install python3-netifaces
 sudo python3 setup.py install
 ```
 
-Alternatively, you can download a desired version from the [Release page](https://github.com/bitbrute/evillimiter/releases).<br>
+### for debian based distros someone from the original repo mentioned installing these packages
+```bash
+sudo apt install python3-setuptools
+sudo apt install python3-netifaces
+```
+
+Alternatively, you can download a desired version from the [Release page](https://github.com/Masrkai/Evillimiter/releases).<br>
 
 ## Usage
 
@@ -75,9 +79,9 @@ Type ```evillimiter``` or ```python3 bin/evillimiter``` to run the tool.
 - **Limits IPv4 connctions only**, since [ARP spoofing](https://en.wikipedia.org/wiki/ARP_spoofing) requires the ARP packet that is only present  on IPv4 networks.
 
 ## Disclaimer
-[Evil Limiter](https://github.com/bitbrute/evillimiter) is provided by [bitbrute](https://github.com/bitbrute) "as is" and "with all faults". The provider makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this software. There are inherent dangers in the use of any software, and you are solely responsible for determining whether Evil Limiter is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and the provider will not be liable for any damages you may suffer in connection with using, modifying, or distributing this software. 
+[Evil Limiter](https://github.com/Masrkai/Evillimiter) is provided by [Masrkai](https://github.com/Masrkai) "as is" and "with all faults". The provider makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this software. There are inherent dangers in the use of any software, and you are solely responsible for determining whether Evil Limiter is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and the provider will not be liable for any damages you may suffer in connection with using, modifying, or distributing this software.
 
 ## License
 
-Copyright (c) 2019 by [bitbrute](https://github.com/bitbrute). Some rights reserved.<br>
-[Evil Limiter](https://github.com/bitbrute/evillimiter) is licensed under the MIT License as stated in the [LICENSE file](LICENSE).
+Copyright (c) 2025 by [Masrkai](https://github.com/Masrkai). Some rights reserved.<br>
+[Evil Limiter](https://github.com/Masrkai/evillimiter) is licensed under the MIT License as stated in the [LICENSE file](LICENSE).
