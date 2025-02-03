@@ -2,6 +2,7 @@ import re
 import os
 import os.path
 import argparse
+import readline
 import platform
 import collections
 import pkg_resources
