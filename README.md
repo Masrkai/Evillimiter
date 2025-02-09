@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/CBGh0Yx.png" /></p>
+<p align="center"><img src="/evillimiter/image.png" /></p>
 
 # Evil Limiter, Originally developed by [bitbrute](https://github.com/bitbrute/) brought back to life by [Masrkai](https://github.com/Masrkai/) 
 
