@@ -10,6 +10,12 @@
 A tool to monitor, analyze and limit the bandwidth (upload/download) of devices on your local network without physical or administrative access.<br>
 ```evillimiter``` employs [ARP spoofing](https://en.wikipedia.org/wiki/ARP_spoofing) and [traffic shaping](https://en.wikipedia.org/wiki/Traffic_shaping) to throttle the bandwidth of hosts on the network.
 
+## Nix / NixOS ?
+I packaged it for my system, as this is a fork that doesn't have a specific name "YET" I didn't request merging it into the [Nixpkgs](https://github.com/NixOS/nixpkgs)
+
+you can find the configuration here (it will take you there directly): [Evillimiter.nix](https://github.com/Masrkai/Nix_Configuration/blob/main/Programs/Packages/evillimiter.nix)
+
+
 **Searching for a Windows-compatible version?**<br>
 Check out the open-source alternative *"made by the original author [bitbrute](https://github.com/bitbrute/) not me "*
 - [EvilLimiter for Windows](https://github.com/bitbrute/evillimiter-windows).
@@ -28,13 +34,11 @@ cd evillimiter
 sudo python3 setup.py install
 ```
 
-### for debian based distros someone from the original repo mentioned installing these packages
+### For debian based distros someone from the original repo mentioned installing these packages
 ```bash
 sudo apt install python3-setuptools
 sudo apt install python3-netifaces
 ```
-
-Alternatively, you can download a desired version from the [Release page](https://github.com/Masrkai/Evillimiter/releases).<br>
 
 ## Usage
 
