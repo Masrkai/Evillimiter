@@ -1,5 +1,11 @@
 [ CHANGELOG ]
 
+[ v1.6.1 ]
+- Added Read lines
+- Updated description
+- Minor code refactoring
+- suppressed disturbing warnings
+
 [ v1.5.0 ]
 - Added host bandwidth usage analysis without limiting (e.g.: analyze 2,3,4 --duration 120)
 - Added ability to detect host reconnections with different IP addresses (watch)
