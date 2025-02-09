@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.imgur.com/CBGh0Yx.png" /></p>
 
-# Evil Limiter
+# Evil Limiter, Originally developed by [bitbrute](https://github.com/bitbrute/) brought back to life by [Masrkai](https://github.com/Masrkai/) 
 
 [![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](PROJECT)
@@ -23,7 +23,7 @@ Possibly missing python packages will be installed during the installation proce
 ## Installation
 
 ```bash
-git clone https://github.com/bitbrute/evillimiter.git
+git clone https://github.com/Masrkai/Evillimiter.git
 cd evillimiter
 sudo python3 setup.py install
 ```
