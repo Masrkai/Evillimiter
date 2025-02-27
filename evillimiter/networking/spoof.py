@@ -2,7 +2,7 @@ import time
 import threading
 
 from .host import Host
-from scapy.all import ARP, send # pylint: disable=no-name-in-module
+from scapy.all import ARP, send
 from evillimiter.common.globals import BROADCAST
 
 
