@@ -91,6 +91,8 @@ from netaddr import IPAddress
 import time
 from functools import partial
 
+from concurrent.futures import ThreadPoolExecutor
+
 from scapy.all import ARP, Ether, srp  # Using srp instead of sr1 for batch processing
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
