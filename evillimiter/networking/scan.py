@@ -15,7 +15,7 @@ import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 from .host import Host
-from evillimiter.console.io import IO
+from console.io import IO
 
 
 class HostScanner(object):
@@ -24,8 +24,8 @@ class HostScanner(object):
         self.iprange = iprange
 
         self.max_workers = 16       # Increased max threads (2× your logical core count)
-        self.retries = 1            # Small retry value to improve speed
-        self.timeout = 1.5          # Reduced timeout
+        self.retries = 0            # Small retry value to improve speed
+        self.timeout = 3            # Timeout
         self.batch_size = 75        # Batch size for ARP requests
         self.resolve_timeout = 1.0  # Timeout for hostname resolution
 
@@ -57,6 +57,7 @@ class HostScanner(object):
                 IO.ok("aborted. waiting for shutdown...")
 
         return hosts
+
 
     def scan_for_reconnects(self, hosts, iprange=None):
         iprange = [str(x) for x in (self.iprange if iprange is None else iprange)]
@@ -124,7 +125,7 @@ class HostScanner(object):
         if present the host is online
         """
         packet = ARP(op=1, pdst=ip)
-        answer = sr1(packet, retry=self.retries, timeout=self.timeout, verbose=0, iface=self.interface)
+        answer = srp(packet, retry=self.retries, timeout=self.timeout, verbose=0, iface=self.interface)
 
         if answer is not None:
             return Host(ip, answer.hwsrc, "")

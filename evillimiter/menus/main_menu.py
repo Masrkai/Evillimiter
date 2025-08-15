@@ -6,18 +6,20 @@ import threading
 import collections
 from terminaltables import SingleTable
 
-import evillimiter.networking.utils as netutils
 from .menu import CommandMenu
-from evillimiter.networking.utils import BitRate
-from evillimiter.console.io import IO
-from evillimiter.console.chart import BarChart
-from evillimiter.console.banner import get_main_banner
-from evillimiter.networking.host import Host
-from evillimiter.networking.limit import Limiter, Direction
-from evillimiter.networking.spoof import ARPSpoofer
-from evillimiter.networking.scan import HostScanner
-from evillimiter.networking.monitor import BandwidthMonitor
-from evillimiter.networking.watch import HostWatcher
+import networking.utils as netutils
+# from   networking.utils import BitRate
+from   networking.units import BitRate # Import from the new module
+
+from   console.io import IO
+from   console.chart import BarChart
+from   console.banner import get_main_banner
+from   networking.host import Host
+from   networking.limit import Limiter, Direction
+from   networking.spoof import ARPSpoofer
+from   networking.scan import HostScanner
+from   networking.monitor import BandwidthMonitor
+from   networking.watch import HostWatcher
 
 
 class MainMenu(CommandMenu):

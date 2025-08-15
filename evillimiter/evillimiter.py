@@ -5,12 +5,10 @@ import argparse
 import readline
 import platform
 import collections
-import pkg_resources
-
-import evillimiter.networking.utils as netutils
-from evillimiter.menus.main_menu import MainMenu
-from evillimiter.console.banner import get_main_banner
-from evillimiter.console.io import IO
+import networking.utils as netutils
+from menus.main_menu import MainMenu
+from console.banner import get_main_banner
+from console.io import IO
 
 
 InitialArguments = collections.namedtuple('InitialArguments', 'interface, gateway_ip, netmask, gateway_mac')
@@ -55,7 +53,7 @@ def parse_arguments():
     parser.add_argument('-g', '--gateway-ip', dest='gateway_ip', help='default gateway ip address. automatically resolved if not specified.')
     parser.add_argument('-m', '--gateway-mac', dest='gateway_mac', help='gateway mac address. automatically resolved if not specified.')
     parser.add_argument('-n', '--netmask', help='netmask for the network. automatically resolved if not specified.')
-    parser.add_argument('-f', '--flush', action='store_true', help='flush current iptables (firewall) and tc (traffic control) settings.')
+    parser.add_argument('-f', '--flush', action='store_true', help='flush current nftables (firewall) and tc (traffic control) settings.')
     parser.add_argument('--colorless', action='store_true', help='disable colored output.')
 
     return parser.parse_args()

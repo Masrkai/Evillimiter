@@ -2,7 +2,7 @@ import time
 import threading
 from scapy.all import sniff, IP # pylint: disable=no-name-in-module
 
-from .utils import ValueConverter, BitRate, ByteValue
+from .units import ValueConverter, BitRate, ByteValue
 
 
 class BandwidthMonitor(object):

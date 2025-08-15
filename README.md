@@ -4,7 +4,7 @@
 
 [![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/python-3-brightgreen.svg)](PROJECT)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+<!-- [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) -->
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 A tool to monitor, analyze and limit the bandwidth (upload/download) of devices on your local network without physical or administrative access.<br>
@@ -55,7 +55,7 @@ Type ```evillimiter``` or ```python3 bin/evillimiter``` to run the tool.
 | ```-g [Gateway IP Address]``` | Specifies gateway IP address (resolved if not specified)|
 | ```-m [Gateway MAC Address]``` | Specifies gateway MAC address (resolved if not specified)|
 | ```-n [Netmask Address]``` | Specifies netmask (resolved if not specified)|
-| ```-f``` | Flushes current iptables and tc configuration. Ensures that packets are dealt with correctly.|
+| ```-f``` | Flushes current nftables and tc configuration. Ensures that packets are dealt with correctly.|
 | ```--colorless``` | Disables colored output |
 
 #### ```evillimiter``` Commands

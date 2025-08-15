@@ -1,7 +1,7 @@
 import os
 import subprocess
 from sys import stderr, stdout
-from evillimiter.console.io import IO
+from console.io import IO
 
 DEVNULL = open(os.devnull, 'w')
 

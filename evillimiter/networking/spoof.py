@@ -3,7 +3,7 @@ import threading
 
 from .host import Host
 from scapy.all import ARP, send
-from evillimiter.common.globals import BROADCAST
+from common.globals import BROADCAST
 
 
 class ARPSpoofer(object):

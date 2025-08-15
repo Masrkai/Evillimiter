@@ -1,11 +1,10 @@
+# evillimiter/console/io.py
 import re
 import colorama
-
-from . import shell
-
+# Remove the top-level import: from . import shell
 
 class IO(object):
-    _ANSI_CSI_RE = re.compile('\001?\033\\[((?:\\d|;)*)([a-zA-Z])\002?') 
+    _ANSI_CSI_RE = re.compile('\001?\033\\[((?:\\d|;)*)([a-zA-Z])\002?')
 
     Back = colorama.Back
     Fore = colorama.Fore
@@ -68,6 +67,8 @@ class IO(object):
         """
         Clears the terminal screen
         """
+        # Import shell inside the method where it's used
+        from . import shell # pylint: disable=import-outside-toplevel
         shell.execute('clear')
 
     @staticmethod
